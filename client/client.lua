@@ -129,7 +129,7 @@ function ToggleSceneLaser()
     if creationLaser then
         CreateThread(function()
             while creationLaser do
-              local hit, coords = DrawLaser('PRESS ~g~E~w~ TO CREATE SCENE\nPRESS ~g~G~w~ TO DELETE SCENE', {r = 2, g = 241, b = 181, a = 200})
+              local hit, coords = DrawLaser('PAINA ~g~E~w~ LUODAKSESI SCENEN\nPAINA ~g~G~w~ POISTAAKSESI SCENEN', {r = 2, g = 241, b = 181, a = 200})
             
               if IsControlJustReleased(0, 38) then
                   sceneData.coords = coords
